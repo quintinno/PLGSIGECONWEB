@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <label><b>Código:</b></label>
+        {{contato.id}}
+    </div>
+    <div>
+        <label><b>Nome:</b></label>
+        {{contato.nome}}
+    </div>
+    <div>
+        <label><b>Telefone:</b></label>
+        {{contato.telefone}}
+    </div>
+    <div>
+        <label><b>E-mail:</b></label>
+        {{contato.email}}
+    </div>
+</div>
+
+<button (click)="removerContato(contato.id)" class="btn btn-danger" style="margin: 10px;">Remover</button>

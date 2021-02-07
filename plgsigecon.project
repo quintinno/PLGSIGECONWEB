@@ -1,0 +1,26 @@
+# PLGSIGECON - Sistema de Gestão de Contatos
+
+	+ Funcionalidades
+
+		+ Permitir gerenciar dados de Contatos
+		+ Permitir cadastrar imagens de Contatos
+		+ Enviar e-mails comemorativos
+		+ Login de usuário administrador
+
+	+ Tecnologias
+
+		- Node v12.18.2
+		- Angular CLI v10.0.7
+
+	+ Comandos
+
+		- npm install -g @angular/cli@10.0.7
+		- npm install bootstrap --save
+		- npm install json-server --save (json-server --watch plgsigecon.database.json --port 9090)
+
+		- ng generate class model/contato-model
+		- ng generate component component/contato-listar
+		- ng generate component component/contato-cadastrar
+		- ng generate component component/contato-atualizar
+		- ng generate component component/contato-detalhe
+		- ng generate service service/contato

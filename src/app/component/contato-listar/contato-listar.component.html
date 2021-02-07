@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>E-mail</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contato_ of contatoList">
+            <td>{{contato_.nome}}</td>
+            <td>{{contato_.telefone}}</td>
+            <td>{{contato_.email}}</td>
+            <td>
+                <button (click)="atualizarContato(contato_.id)" class="btn btn-info">Atualizar</button>
+                <button (click)="removerContato(contato_.id)" class="btn btn-danger" style="margin: 10px;">Remover</button>
+                <button (click)="detalharContato(contato_.id)" class="btn btn-warning" style="margin: 10px;">Detalhar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
